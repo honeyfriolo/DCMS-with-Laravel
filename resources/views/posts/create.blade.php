@@ -29,14 +29,38 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Title:</strong>
-                <input type="text" name="title" class="form-control" placeholder="Enter Title">
+                <strong>Name:</strong>
+                <input type="text" name="name" class="form-control" placeholder="Enter Name">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Description:</strong>
-                <textarea class="form-control" style="height:150px" name="description" placeholder="Enter Description"></textarea>
+                <strong>Age:</strong>
+                <input type="numeric" name="age" class="form-control" placeholder="Enter Age">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Telephone:</strong>
+                <input type="numeric" name="telephone" class="form-control" placeholder="Enter Phone Number">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Address:</strong>
+                <input type="text" name="address" class="form-control" placeholder="Enter Address">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Complain:</strong>
+                <input type="text" name="complain" class="form-control" placeholder="Enter Complain">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Procedure:</strong>
+                <input type="text" name="procedure" class="form-control" placeholder="Enter Procedure">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

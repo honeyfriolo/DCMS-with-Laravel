@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Inventory extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name', 'age', 'telephone', 'address', 'complain', 'procedure'
+        'medicineName', 'description', 'stockStatus'
     ];
 }

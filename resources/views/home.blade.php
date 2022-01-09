@@ -21,5 +21,6 @@
         </div>
     </div>
     <a class="btn btn-primary" href="{{ route('posts.index') }}"> Post</a>
+    <a class="btn btn-primary" href="{{ route('inventory.index') }}"> Inventory</a>
 </div>
 @endsection

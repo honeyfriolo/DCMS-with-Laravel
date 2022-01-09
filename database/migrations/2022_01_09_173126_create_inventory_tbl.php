@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePostTbl extends Migration
+class CreateInventoryTbl extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,11 @@ class CreatePostTbl extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('inventory', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('age');
-            $table->string('telephone');
-            $table->string('address');
-            $table->string('complain');
-            $table->string('procedure');
+            $table->string('medicineName');
+            $table->string('description');
+            $table->string('stockStatus');
             $table->timestamps();
         });
     }
@@ -32,6 +29,6 @@ class CreatePostTbl extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('inventory');
     }
 }

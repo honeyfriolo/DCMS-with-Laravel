@@ -1,4 +1,4 @@
-@extends('posts.layout')
+@extends('inventory.layout')
  
 @section('content')
     <div class="row" style="margin-top: 5rem;">
@@ -7,7 +7,7 @@
                 <h2>Laravel 8 CRUD Example from scratch - laravelcode.com</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('posts.create') }}"> Add Patient</a>
+                <a class="btn btn-success" href="{{ route('inventory.create') }}"> Create New Post</a>
             </div>
         </div>
     </div>
@@ -21,27 +21,21 @@
     <table class="table table-bordered">
         <tr>
             <th>No</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Telephone</th>
-            <th>Address</th>
-            <th>Complain</th>
-            <th>Procedure</th>
+            <th>Medicine Name</th>
+            <th>Description</th>
+            <th>Stock Status</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($data as $key => $value)
         <tr>
             <td>{{ ++$i }}</td>
-            <td>{{ $value->name }}</td>
-            <td>{{ $value->age }}</td>
-            <td>{{ $value->telephone }}</td>
-            <td>{{ $value->address }}</td>
-            <td>{{ $value->complain }}</td>
-            <td>{{ $value->procedure }}</td>
+            <td>{{ $value->medicineName }}</td>
+            <td>{{ \Str::limit($value->description, 100) }}</td>
+            <td>{{ $value->stockStatus }}</td>
             <td>
-                <form action="{{ route('posts.destroy',$value->id) }}" method="POST">   
-                    <a class="btn btn-info" href="{{ route('posts.show',$value->id) }}">Show</a>    
-                    <a class="btn btn-primary" href="{{ route('posts.edit',$value->id) }}">Edit</a>   
+                <form action="{{ route('inventory.destroy',$value->id) }}" method="POST">   
+                    <a class="btn btn-info" href="{{ route('inventory.show',$value->id) }}">Show</a>    
+                    <a class="btn btn-primary" href="{{ route('inventory.edit',$value->id) }}">Edit</a>   
                     @csrf
                     @method('DELETE')      
                     <button type="submit" class="btn btn-danger">Delete</button>
