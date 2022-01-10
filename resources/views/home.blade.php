@@ -1,26 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    <div class="card-body">
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
 
-                    {{ __('You are logged in!') }}
+                        {{ __('You are logged in!') }}
+                    </div>
+
                 </div>
-               
             </div>
         </div>
+        <a class="btn btn-primary" href="{{ route('posts.index') }}"> Post</a>
     </div>
+<<<<<<< HEAD
     <a class="btn btn-primary" href="{{ route('posts.index') }}"> Post</a>
     <a class="btn btn-primary" href="{{ route('inventory.index') }}"> Inventory</a>
 </div>
+=======
+>>>>>>> 715fa8e6ca11db1cd16afd92d0d461012d5663e3
 @endsection
