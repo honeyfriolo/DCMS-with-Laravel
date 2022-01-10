@@ -1,13 +1,16 @@
-@extends('inventory.layout')
+@extends('inventories.layout')
  
 @section('content')
     <div class="row" style="margin-top: 5rem;">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Laravel 8 CRUD Example from scratch - laravelcode.com</h2>
+                <h2>Inventory</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('inventory.create') }}"> Create New Post</a>
+                <a class="btn btn-success" href="{{ route('home') }}"> Home</a>
+            </div>
+            <div class="pull-right">
+                <a class="btn btn-success" href="{{ route('inventories.create') }}"> Add Medicine</a>
             </div>
         </div>
     </div>
@@ -33,9 +36,9 @@
             <td>{{ \Str::limit($value->description, 100) }}</td>
             <td>{{ $value->stockStatus }}</td>
             <td>
-                <form action="{{ route('inventory.destroy',$value->id) }}" method="POST">   
-                    <a class="btn btn-info" href="{{ route('inventory.show',$value->id) }}">Show</a>    
-                    <a class="btn btn-primary" href="{{ route('inventory.edit',$value->id) }}">Edit</a>   
+                <form action="{{ route('inventories.destroy',$value->id) }}" method="POST">   
+   
+                    <a class="btn btn-primary" href="{{ route('inventories.edit',$value->id) }}">Edit</a>   
                     @csrf
                     @method('DELETE')      
                     <button type="submit" class="btn btn-danger">Delete</button>

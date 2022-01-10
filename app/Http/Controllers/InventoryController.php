@@ -16,7 +16,7 @@ class InventoryController extends Controller
     {
         $data = Inventory::latest()->paginate(5);
     
-        return view('inventory.index',compact('data'))
+        return view('inventories.index',compact('data'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -27,7 +27,7 @@ class InventoryController extends Controller
      */
     public function create()
     {
-        return view('inventory.create');
+        return view('inventories.create');
     }
 
     /**
@@ -46,7 +46,7 @@ class InventoryController extends Controller
     
         Inventory::create($request->all());
      
-        return redirect()->route('inventory.index')
+        return redirect()->route('inventories.index')
                         ->with('success','Medicine created successfully.');
     }
 
@@ -58,7 +58,7 @@ class InventoryController extends Controller
      */
     public function show(Inventory $inventory)
     {
-        return view('inventory.show',compact('inventory'));
+        return view('inventories.show', compact('inventory'));
     }
 
     /**
@@ -69,7 +69,7 @@ class InventoryController extends Controller
      */
     public function edit(Inventory $inventory)
     {
-        return view('inventory.show',compact('inventory'));
+        return view('inventories.edit', compact('inventory'));
     }
 
     /**
@@ -89,8 +89,8 @@ class InventoryController extends Controller
     
         Inventory::create($request->all());
      
-        return redirect()->route('inventory.index')
-                        ->with('success','Medicine created successfully.');
+        return redirect()->route('inventories.index')
+                        ->with('success','Medicine edited successfully.');
     }
 
     /**
@@ -103,7 +103,7 @@ class InventoryController extends Controller
     {
         $inventory->delete();
     
-        return redirect()->route('inventory.index')
+        return redirect()->route('inventories.index')
                         ->with('success','Medicine deleted successfully');
     }
 }

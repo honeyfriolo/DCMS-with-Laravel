@@ -1,4 +1,4 @@
-@extends('inventory.layout')
+@extends('inventories.layout')
   
 @section('content')
 <div class="row">
@@ -7,7 +7,7 @@
             <h2>Add New Product</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('inventory.index') }}"> Back</a>
+            <a class="btn btn-primary" href="{{ route('inventories.index') }}"> Back</a>
         </div>
     </div>
 </div>
@@ -23,7 +23,7 @@
     </div>
 @endif
    
-<form action="{{ route('inventory.store') }}" method="POST">
+<form action="{{ route('inventories.store') }}" method="POST">
     @csrf
   
      <div class="row">
@@ -42,7 +42,10 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Stock Status:</strong>
-                <input type="text" name="stockStatus" class="form-control" placeholder="Enter Stock Status">
+                <select name="stockStatus" id="stockStatus">
+                    <option value="Available">Available</option>
+                    <option value="Not Available">Not Available</option>
+                </select>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

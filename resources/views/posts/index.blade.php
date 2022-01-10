@@ -4,10 +4,13 @@
     <div class="row" style="margin-top: 5rem;">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Laravel 8 CRUD Example from scratch - laravelcode.com</h2>
+                <h2>Patients List</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-success" href="{{ route('posts.create') }}"> Add Patient</a>
+            </div>
+            <div class="pull-right">
+                <a class="btn btn-success" href="{{ route('home') }}"> Home</a>
             </div>
         </div>
     </div>
@@ -39,8 +42,7 @@
             <td>{{ $value->complain }}</td>
             <td>{{ $value->procedure }}</td>
             <td>
-                <form action="{{ route('posts.destroy',$value->id) }}" method="POST">   
-                    <a class="btn btn-info" href="{{ route('posts.show',$value->id) }}">Show</a>    
+                <form action="{{ route('posts.destroy',$value->id) }}" method="POST">    
                     <a class="btn btn-primary" href="{{ route('posts.edit',$value->id) }}">Edit</a>   
                     @csrf
                     @method('DELETE')      

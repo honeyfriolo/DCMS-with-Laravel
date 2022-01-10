@@ -39,10 +39,8 @@
             mt-5"
                         href="{{ route('login') }}">Log in</a>
 
-<<<<<<< HEAD
         </div>
     </body>
-=======
                     @if (Route::has('register'))
                         <a href="{{ route('register') }}"
                             class="  bg-blue-500
@@ -64,5 +62,4 @@
     </div>
 </body>
 
->>>>>>> 715fa8e6ca11db1cd16afd92d0d461012d5663e3
 </html>

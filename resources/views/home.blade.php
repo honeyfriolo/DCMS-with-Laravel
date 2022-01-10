@@ -16,16 +16,12 @@
 
                         {{ __('You are logged in!') }}
                     </div>
-
                 </div>
+                
             </div>
         </div>
-        <a class="btn btn-primary" href="{{ route('posts.index') }}"> Post</a>
     </div>
-<<<<<<< HEAD
     <a class="btn btn-primary" href="{{ route('posts.index') }}"> Post</a>
-    <a class="btn btn-primary" href="{{ route('inventory.index') }}"> Inventory</a>
+    <a class="btn btn-primary" href="{{ route('inventories.index') }}"> Inventory</a>
 </div>
-=======
->>>>>>> 715fa8e6ca11db1cd16afd92d0d461012d5663e3
 @endsection

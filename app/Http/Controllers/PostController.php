@@ -50,7 +50,7 @@ class PostController extends Controller
         Post::create($request->all());
      
         return redirect()->route('posts.index')
-                        ->with('success','Post created successfully.');
+                        ->with('success','Patient created successfully.');
     }
 
     /**
@@ -96,7 +96,7 @@ class PostController extends Controller
         $post->update($request->all());
     
         return redirect()->route('posts.index')
-                        ->with('success','Post updated successfully');
+                        ->with('success','Patient edited successfully');
     }
 
     /**
@@ -110,6 +110,6 @@ class PostController extends Controller
         $post->delete();
     
         return redirect()->route('posts.index')
-                        ->with('success','Post deleted successfully');
+                        ->with('success','Patient deleted successfully');
     }
 }

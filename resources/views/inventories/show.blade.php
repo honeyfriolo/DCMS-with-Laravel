@@ -1,4 +1,4 @@
-@extends('inventory.layout')
+@extends('inventories.layout')
   
 @section('content')
     <div class="row">
@@ -7,7 +7,7 @@
                 <h2> Show Product</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('inventory.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('inventories.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -16,13 +16,15 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Title:</strong>
-                {{ $inventory->title }}
+                {{ $inventory->medicineName }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Description:</strong>
                 {{ $inventory->description }}
+                {{ $inventory->stockStatus }}
+      
             </div>
         </div>
     </div>

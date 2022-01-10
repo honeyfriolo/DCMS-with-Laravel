@@ -22,7 +22,7 @@ Route::get('/', function () {
 Auth::routes(); 
 
 Route::resource('posts', PostController::class);
-Route::resource('inventory', InventoryController::class);
+Route::resource('inventories', InventoryController::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
