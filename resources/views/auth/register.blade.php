@@ -1,12 +1,8 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app') --}}
+@extends('auth.layout')
 
 @section('content')
-   <div
-   class="bg-image d-flex justify-content-center align-items-center" style="background-image: url('/images/bg.jpg');
-         background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          height: 100%;">
+  
 
     <div class="text-center text-red-500 font-bold mt-5 text-xl">
         <div

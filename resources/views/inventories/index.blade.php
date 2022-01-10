@@ -1,19 +1,7 @@
-@extends('inventories.layout')
+@extends('layouts.app')
  
 @section('content')
-    <div class="row" style="margin-top: 5rem;">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Inventory</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('home') }}"> Home</a>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('inventories.create') }}"> Add Medicine</a>
-            </div>
-        </div>
-    </div>
+   
    
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
@@ -47,5 +35,21 @@
         </tr>
         @endforeach
     </table>  
-    {!! $data->links() !!}      
+    <div class="">
+        <a class="btn btn-success    mt-20
+              hover:text-blue-500 hover:border-blue-500
+              border
+              hover:bg-white
+              py-2
+              px-5
+              float-right
+              rounded-lg
+              font-bold
+              mt-5
+              text-white
+              ml-5
+              bg-blue-500" href="{{ route('inventories.create') }}"> Add Medicine</a>
+    </div>
+
+    {!! $data->links() !!}  </div>    
 @endsection

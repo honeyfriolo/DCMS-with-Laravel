@@ -9,7 +9,7 @@
 </head>
 
 <body class="relative">
-    <img class="h-screen w-screen" src="{{ url('/images/bgmain.png') }}" alt="Image" />
+    <img class="w-full h-full" src="{{ url('/images/bgmain.png') }}" alt="Image" />
 
     <div
         class=" absolute

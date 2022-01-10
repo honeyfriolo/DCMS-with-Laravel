@@ -1,5 +1,4 @@
-@extends('layouts.app')
-
+@extends('auth.layout')
 @section('content')
 
     <div class="text-center text-red-500 font-bold mt-5 text-xl">
