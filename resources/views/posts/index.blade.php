@@ -1,4 +1,3 @@
-@extends('posts.layout')
 @extends('layouts.app')
  
 @section('content')

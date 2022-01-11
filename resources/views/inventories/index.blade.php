@@ -1,7 +1,7 @@
 @extends('layouts.app')
  
 @section('content')
-   
+<div class="mt-10"></div>
    
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
@@ -26,10 +26,10 @@
             <td>
                 <form action="{{ route('inventories.destroy',$value->id) }}" method="POST">   
    
-                    <a class="btn btn-primary" href="{{ route('inventories.edit',$value->id) }}">Edit</a>   
+                    <a class="fa fa-edit p-3" href="{{ route('inventories.edit',$value->id) }}">   Edit</a>   
                     @csrf
                     @method('DELETE')      
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="fa fa-trash p-3">  Delete</button>
                 </form>
             </td>
         </tr>

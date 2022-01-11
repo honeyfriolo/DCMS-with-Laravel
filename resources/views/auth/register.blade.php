@@ -66,14 +66,14 @@
                 </div>
 
                 <div class="flex w-min mx-auto mt-4 gap-2">
-                    <button href="{{ url('\welcome') }}" class="btn btn-primary bg-red-500
+                    <a href="{{ url('/') }}" class="btn btn-primary bg-red-500
                     hover:bg-red-700
                     text-white
                     font-bold
                     px-10
                     rounded-full">
                         {{ __('Cancel') }}
-                    </button>
+                    </a>
                         <button type="submit" class=" btn btn-primary  bg-blue-500
                         hover:bg-blue-700
                         text-white
