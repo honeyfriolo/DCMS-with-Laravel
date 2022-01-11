@@ -6,16 +6,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div
-    class="bg-image d-flex justify-content-center align-items-center" style="background-image: url('/images/bg.jpg');
-          background-position: center;
-           background-repeat: no-repeat;
-           background-size: cover;
-           height: 100%;
-           ">
+<img class="w-full h-full" src="{{ url('/images/bg.jpg') }}" alt="Image" />
 <div class="container">
     @yield('content')
 </div>
-</div>
+
 </body>
 </html>

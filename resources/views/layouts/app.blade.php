@@ -13,13 +13,16 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <style>
 
     </style>
 </head>
 
 <body>
+
     <div id="app" class="flex">
+    
         <div class="bg-blue-300 w-2/12 h-screen pt-10 transform translate-y-0 translate-x-0 ">
             <a class="btn btn-primary bg-transparent
             hover:bg-white hover:text-black
@@ -100,11 +103,12 @@
             </div>
         
         </nav>
-
-        <main class="w-9/12 mx-auto text-center mt-20">
+   
+        <main class="w-9/12 mx-auto">
+       
             @yield('content')
         </main>
-  
+     
 </div>
 </body>
 

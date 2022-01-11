@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Laravel 8 CRUD Application - laravelcode.com</title>
@@ -12,4 +12,4 @@
 </div>
     
 </body>
-</html>
+</html> -->
