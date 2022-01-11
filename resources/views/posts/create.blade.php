@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-{{-- @extends('posts.layout') --}}
 @extends('layouts.app')
 
-=======
-<!-- @extends('posts.layout') -->
-@extends('layouts.app')  
->>>>>>> 0469ccaa0c41da36bf8582299d3d08d7ba39d60d
 @section('content')
     <div class="mt-4">
         <div class="italic uppercase border-b text-left">
@@ -47,12 +41,11 @@
             <div class="flex">
                 <div class="max-w-lg mr-12">
                     <strong class="block text-gray-700 text-s text-left mb-2">Telephone:</strong>
-                    <input type="numeric" name="telephone" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded
-                        py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" placeholder="Enter Phone Number">
+                    <input type="numeric" name="telephone" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" placeholder="Enter Phone Number">
                 </div>
             {{-- Patients Date --}}
                 <div class="max-w-lg mr-12">
-                    <strong class="block text-gray-700 text-s text-left mb-2">Address:</strong>
+                    <strong class="block text-gray-700 text-s text-left mb-2">Date:</strong>
                     <input type="date" name="date" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded
                     py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white">
                 </div>
@@ -75,12 +68,11 @@
 
             {{-- Patients  Procedure--}}
             
-                <div class="max-w-lg mr-12">
-                    <strong class="block text-gray-700 text-s text-left mb-2">Procedure:</strong>
-                    <input type="text" name="procedure" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded
-                    py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" placeholder="Enter Procedure">
-                </div>
+            <div class="max-w-lg mr-12">
+                <strong class="block text-gray-700 text-s text-left mb-2">Procedure:</strong>
+                <input type="text" name="procedure" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" placeholder="Enter Procedure">
             </div>
+        </div>
 
             {{-- Buttons --}}
             <div class="flex pl-24">
@@ -89,6 +81,6 @@
                 <button type="submit" class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-16
                 rounded-tr-lg rounded-br-lg uppercase block mt-5">Submit</button>  
             </div> 
-        </div>
+        
     </form>
 @endsection

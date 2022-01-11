@@ -1,15 +1,9 @@
-@extends('posts.layout')
 @extends('layouts.app')
    
 @section('content')
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Edit Patient's Information</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('posts.index') }}"> Back</a>
-            </div>
+    <div class="mt-4">
+        <div class="italic uppercase border-b text-left">
+            <h2>Patient's Information</h2>
         </div>
     </div>
    
@@ -28,49 +22,68 @@
         @csrf
         @method('PUT')
    
-         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Name:</strong>
-                    <input type="text" name="name" class="form-control"
-                    value="{{ $post->name }}" placeholder="Enter Name">
+         {{-- Patients Name --}}
+        <div class="flex flex-wrap">
+            <div class="pt-3">
+                <div class="max-w-lg mr-12">
+                    <strong class="block text-gray-700 text-s text-left mb-2">Name:</strong>
+                    <input type="text" name="name" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded py-3
+                    px-4 mb-3 leading-tight focus:outline-none focus:bg-white" value="{{ $post->name }}" placeholder="Enter Name">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Age:</strong>
-                    <input type="numeric" name="age" class="form-control" 
-                    value="{{ $post->age }}" placeholder="Enter Age">
+            {{-- Patients Age --}}
+            <div class="max-w-lg mt-3">
+                <strong class="block text-gray-700 text-s text-left mb-2">Age:</strong>
+                <input type="numeric" name="age" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded py-3
+                    px-4 mb-3 leading-tight focus:outline-none focus:bg-white" value="{{ $post->age }}" placeholder="Enter Age">
+            </div>
+
+            {{-- Patients Telephone --}}
+            <div class="flex">
+                <div class="max-w-lg mr-12">
+                    <strong class="block text-gray-700 text-s text-left mb-2">Telephone:</strong>
+                    <input type="numeric" name="telephone" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" value="{{ $post->telephone }}" placeholder="Enter Phone Number">
+                </div>
+            {{-- Patients Date --}}
+                <div class="max-w-lg mr-12">
+                    <strong class="block text-gray-700 text-s text-left mb-2">Date:</strong>
+                    <input type="date" name="date" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded
+                    py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" value="{{ $post->date }}">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Telephone:</strong>
-                    <input type="numeric" name="telephone" class="form-control" value="{{ $post->telephone }}" placeholder="Enter Phone Number">
+            
+            {{-- Patients Address --}}
+            <div class="flex">
+                <div class="max-w-lg mr-12">
+                    <strong class="block text-gray-700 text-s text-left mb-2">Address:</strong>
+                    <input type="text" name="address" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded
+                    py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" value="{{ $post->address }}" placeholder="Enter Address">
+                </div>
+            {{-- Patients  Complain--}}
+                <div class="max-w-lg mr-12">
+                    <strong class="block text-gray-700 text-s text-left mb-2">Complain:</strong>
+                    <input type="text" name="complain" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded
+                    py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" value="{{ $post->complain }}" placeholder="Enter Complain">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Address:</strong>
-                    <input type="text" name="address" class="form-control" value="{{ $post->address }}" placeholder="Enter Address">
+
+            {{-- Patients  Procedure--}}
+            
+                <div class="max-w-lg mr-12">
+                    <strong class="block text-gray-700 text-s text-left mb-2">Procedure:</strong>
+                    <input type="text" name="procedure" class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded
+                    py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" value="{{ $post->procedure }}" placeholder="Enter Procedure">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Complain:</strong>
-                    <input type="text" name="complain" class="form-control" value="{{ $post->complain }}" placeholder="Enter Complain">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Procedure:</strong>
-                    <input type="text" name="procedure" class="form-control" value="{{ $post->procedure }}" placeholder="Enter Procedure">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </div>
+            
+            {{-- Buttons --}}
+            <div class="flex pl-24">
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-14 rounded-tl-lg rounded-bl-lg
+                uppercase mt-5" href="{{ route('posts.index') }}"> Back</button>
+                <button type="submit" class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-16
+                rounded-tr-lg rounded-br-lg uppercase block mt-5">Submit</button>  
+            </div> 
+        
    
     </form>
 @endsection

@@ -14,6 +14,7 @@
             <th>Name</th>
             <th>Age</th>
             <th>Telephone</th>
+            <th>Date</th>
             <th>Address</th>
             <th>Complain</th>
             <th>Procedure</th>
@@ -25,15 +26,16 @@
             <td>{{ $value->name }}</td>
             <td>{{ $value->age }}</td>
             <td>{{ $value->telephone }}</td>
+            <td>{{ $value->date }}</td>
             <td>{{ $value->address }}</td>
             <td>{{ $value->complain }}</td>
             <td>{{ $value->procedure }}</td>
             <td>
                 <form action="{{ route('posts.destroy',$value->id) }}" method="POST">    
-                    <a class="btn btn-primary" href="{{ route('posts.edit',$value->id) }}">Edit</a>   
+                    <a class="fa fa-edit p-3" href="{{ route('posts.edit',$value->id) }}">   Edit</a>   
                     @csrf
                     @method('DELETE')      
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="fa fa-trash p-3">  Delete</button>
                 </form>
             </td>
         </tr>

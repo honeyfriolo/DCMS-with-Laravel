@@ -103,14 +103,9 @@
             </div>
         
         </nav>
-<<<<<<< HEAD
-
-        <main class="w-9/12 mx-auto text-center">
-=======
    
         <main class="w-9/12 mx-auto">
        
->>>>>>> 0469ccaa0c41da36bf8582299d3d08d7ba39d60d
             @yield('content')
         </main>
      
