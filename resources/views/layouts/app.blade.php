@@ -101,7 +101,7 @@
         
         </nav>
 
-        <main class="w-9/12 mx-auto text-center mt-20">
+        <main class="w-9/12 mx-auto text-center">
             @yield('content')
         </main>
   

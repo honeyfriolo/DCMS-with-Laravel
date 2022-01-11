@@ -18,6 +18,7 @@ class CreatePostTbl extends Migration
             $table->string('name');
             $table->integer('age');
             $table->string('telephone');
+            $table->date('date');
             $table->string('address');
             $table->string('complain');
             $table->string('procedure');

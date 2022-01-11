@@ -1,4 +1,5 @@
 @extends('posts.layout')
+@extends('layouts.app')
    
 @section('content')
     <div class="row">
@@ -51,7 +52,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Address:</strong>
-                    <input type="text" name="address" class="form-control" value="{{ $post->addresss }}" placeholder="Enter Address">
+                    <input type="text" name="address" class="form-control" value="{{ $post->address }}" placeholder="Enter Address">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

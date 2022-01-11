@@ -1,4 +1,5 @@
 @extends('inventories.layout')
+
   
 @section('content')
 <div class="row">
