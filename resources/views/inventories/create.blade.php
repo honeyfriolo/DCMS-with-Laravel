@@ -1,5 +1,9 @@
 @extends('layouts.app')
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 577a1530fa244228091f7f3f8b44aadc9cc87469
 @section('content')
 <div class="flex flex-wrap" >
       <h3 class="italic uppercase mt-4 border-b block float-left">

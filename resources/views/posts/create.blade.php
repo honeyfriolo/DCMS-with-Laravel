@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 @extends('layouts.app')
 
+=======
+@extends('layouts.app')  
+>>>>>>> 577a1530fa244228091f7f3f8b44aadc9cc87469
 @section('content')
     <div class="mt-4">
         <div class="italic uppercase border-b text-left">
