@@ -1,7 +1,7 @@
 @extends('layouts.app')
  
 @section('content')
-    <div class="mt-20" />
+    <div class="mt-20" >
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p>{{ $message }}</p>

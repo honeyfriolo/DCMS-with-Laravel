@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-{{-- @extends('posts.layout') --}}
-@extends('layouts.app')
-
-=======
-<!-- @extends('posts.layout') -->
 @extends('layouts.app')  
->>>>>>> 0469ccaa0c41da36bf8582299d3d08d7ba39d60d
 @section('content')
     <div class="mt-4">
         <div class="italic uppercase border-b text-left">

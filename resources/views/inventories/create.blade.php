@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-@extends('inventories.layout')
-
-  
-=======
-<!-- @extends('inventories.layout') -->
 @extends('layouts.app')
 
->>>>>>> 0469ccaa0c41da36bf8582299d3d08d7ba39d60d
 @section('content')
 <div class="flex flex-wrap" >
       <h3 class="italic uppercase mt-4 border-b block float-left">
