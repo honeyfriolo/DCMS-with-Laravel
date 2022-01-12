@@ -111,7 +111,7 @@
             </div>
         </div>
         <div class="flex pl-24">
-        <button type="submit" class="btn btn-primary    bg-blue-500
+        <button type="submit" class="btn btn-primary bg-blue-500
             hover:bg-blue-700
             text-white
             font-bold

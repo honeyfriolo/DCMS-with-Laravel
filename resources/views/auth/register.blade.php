@@ -1,4 +1,3 @@
-{{-- @extends('layouts.app') --}}
 @extends('auth.layout')
 
 @section('content')
@@ -74,7 +73,7 @@
                     rounded-full">
                         {{ __('Cancel') }}
                     </a>
-                        <button type="submit" class=" btn btn-primary  bg-blue-500
+                        <button type="submit" class=" btn btn-primary bg-blue-500
                         hover:bg-blue-700
                         text-white
                         font-bold
