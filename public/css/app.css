@@ -11816,6 +11816,27 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-0 {
   margin-bottom: 0px;
 }
+.ml-24 {
+  margin-left: 6rem;
+}
+.ml-2\.5 {
+  margin-left: 0.625rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.ml-80 {
+  margin-left: 20rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
 .block {
   display: block;
 }

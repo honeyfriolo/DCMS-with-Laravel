@@ -1,15 +1,11 @@
-<<<<<<< HEAD
-@extends('layouts.app')
-
-=======
 @extends('layouts.app')  
->>>>>>> 577a1530fa244228091f7f3f8b44aadc9cc87469
 @section('content')
     <div class="mt-4">
         <div class="italic uppercase border-b text-left">
-            <h2>Patient's Information</h2>
+            <h2>Patient's Information</h2>   
         </div>
     </div>
+    
 
     @if ($errors->any())
         <div class="alert alert-danger">
@@ -22,6 +18,7 @@
         </div>
     @endif
 
+    <div class="flex flex-wrap">
     <form action="{{ route('posts.store') }}" method="POST">
         @csrf
 
@@ -79,12 +76,14 @@
         </div>
 
             {{-- Buttons --}}
-            <div class="flex pl-24">
-                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-14 rounded-tl-lg rounded-bl-lg
-                uppercase mt-5" href="{{ route('posts.index') }}"> Back</button>
+            <div class="flex relative ml-80">
                 <button type="submit" class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-16
-                rounded-tr-lg rounded-br-lg uppercase block mt-5">Submit</button>  
+                rounded-tr-lg rounded-br-lg uppercase ">Submit</button>  
             </div> 
-        
     </form>
+    {{-- <div class="flex-wrap"> --}}
+        <a class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-14 rounded-tl-lg rounded-bl-lg mb-8 uppercase" href="{{ route('posts.index') }}"> Back</a>
+    {{-- </div> --}}
+</div>
+
 @endsection
