@@ -23,6 +23,7 @@ Auth::routes();
 
 Route::resource('posts', PostController::class);
 Route::resource('inventories', InventoryController::class);
+Route::resource('auth/passwords', ResetPasswordController::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

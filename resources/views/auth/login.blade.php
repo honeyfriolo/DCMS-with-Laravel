@@ -1,7 +1,6 @@
 @extends('auth.layout')
 @section('content')
 
-    <div class="text-center text-red-500 font-bold mt-5 text-xl">
         <div
             class="
               absolute
@@ -61,11 +60,12 @@
           
                 </div>
             </form>
-                <div class="has-text-centered" style="margin-top: 10px">
-                    <p> No account?
+            
+                <div class="has-text-centered flex gap-5" style="margin-top: 10px">
+                    <p> No account? </p>
                         <a class="text-red-500 float-right font-bold hover:text-red-800"
                             href="{{ route('register') }}">Create an account</a>
-                    </p>
+                 
                 </div>
         </div>
 
