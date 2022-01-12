@@ -1,15 +1,12 @@
 @extends('layouts.app')
-<<<<<<< HEAD
- 
-=======
-
->>>>>>> 577a1530fa244228091f7f3f8b44aadc9cc87469
 @section('content')
 <div class="flex flex-wrap" >
       <h3 class="italic uppercase mt-4 border-b block float-left">
         add medicine
       </h3>
       <div class="py-4">
+
+
 @if ($errors->any())
     <div class="alert alert-danger text-center">
         <strong>Whoops!</strong> There were some problems with your input.<br>
@@ -21,7 +18,7 @@
     </div>
 @endif
 
-<div class="flex pr-28 pt-10">
+<div class="pr-28 pt-10">
 <form action="{{ route('inventories.store') }}" method="POST" class="w-full max-w-lg">
     @csrf
   
@@ -114,7 +111,20 @@
             </div>
         </div>
         <div class="flex pl-24">
-        <button href="{{ route('inventories.index') }}"
+        <button type="submit" class="btn btn-primary    bg-blue-500
+            hover:bg-blue-700
+            text-white
+            font-bold
+            py-2
+            px-16
+            rounded-tr-lg rounded-br-lg
+            uppercase
+            block
+            mt-5">Submit</button>
+        </div>
+    </div>
+</form>
+<a href="{{ route('inventories.index') }}"
           class="
             bg-red-500
             hover:bg-red-700
@@ -128,19 +138,7 @@
           "
         >
           cancel
-        </button> <button type="submit" class="btn btn-primary    bg-blue-500
-            hover:bg-blue-700
-            text-white
-            font-bold
-            py-2
-            px-16
-            rounded-tr-lg rounded-br-lg
-            uppercase
-            block
-            mt-5">Submit</button>
-        </div>
-    </div>
-</form>
+        </a> 
 </div>
 </div>
 </div>
