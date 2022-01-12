@@ -1,5 +1,6 @@
 @extends('layouts.app')  
 @section('content')
+    
     <div class="mt-4">
         <div class="italic uppercase border-b text-left">
             <h2>Patient's Information</h2>   
@@ -18,7 +19,7 @@
         </div>
     @endif
 
-    <div class="flex flex-wrap">
+    
     <form action="{{ route('posts.store') }}" method="POST">
         @csrf
 
@@ -76,15 +77,11 @@
         </div>
 
             {{-- Buttons --}}
-            <div class="flex relative ml-80">
-                <a class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-14 rounded-tl-lg rounded-bl-lg mb-8 uppercase" href="{{ route('posts.index') }}"> Back</a>
-                <button type="submit" class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-16
-                rounded-tr-lg rounded-br-lg uppercase ">Submit</button>  
+            <div class="flex relative ml-48 mt-10">
+                <a class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-14 rounded-tl-lg rounded-bl-lg h-10 w-13 mb-8 uppercase" href="{{ route('posts.index') }}"> Back</a>
+                <button type="submit" class=" bg-blue-500 hover:bg-blue-700 text-white font-bold px-14 h-10 rounded-tr-lg rounded-br-lg uppercase ">Submit</button>  
             </div> 
     </form>
-    {{-- <div class="flex-wrap"> --}}
-        {{-- <a class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-14 rounded-tl-lg rounded-bl-lg mb-8 uppercase" href="{{ route('posts.index') }}"> Back</a> --}}
-    {{-- </div> --}}
-</div>
+
 
 @endsection
