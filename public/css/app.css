@@ -11887,6 +11887,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ml-40 {
   margin-left: 10rem;
 }
+.ml-48 {
+  margin-left: 12rem;
+}
 .block {
   display: block;
 }
@@ -11904,6 +11907,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-screen {
   height: 100vh;
+}
+.h-10 {
+  height: 2.5rem;
 }
 .w-full {
   width: 100%;
