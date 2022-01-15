@@ -87,7 +87,7 @@ class InventoryController extends Controller
             'stockStatus' => 'required',
         ]);
     
-        Inventory::create($request->all());
+        $inventory->update($request->all());
      
         return redirect()->route('inventories.index')
                         ->with('success','Medicine edited successfully.');
