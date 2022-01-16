@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-{{-- <!DOCTYPE html>
-=======
 <!-- <!DOCTYPE html>
->>>>>>> 0469ccaa0c41da36bf8582299d3d08d7ba39d60d
 <html>
 <head>
     <title>Laravel 8 CRUD Application - laravelcode.com</title>
@@ -17,8 +13,4 @@
 </div>
    
 </body>
-<<<<<<< HEAD
-</html> --}}
-=======
 </html> -->
->>>>>>> 0469ccaa0c41da36bf8582299d3d08d7ba39d60d

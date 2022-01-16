@@ -21,7 +21,7 @@
 
                 <div class="flex items-center border-b border-teal-500 py-2">
                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email"
-                        value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email">
+                        value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Username">
 
                     @error('email')
                         <span class="invalid-feedback" role="alert">

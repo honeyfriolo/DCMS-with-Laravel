@@ -25,6 +25,7 @@ Auth::routes();
 Route::resource('posts', PostController::class);
 Route::resource('inventories', InventoryController::class);
 Route::resource('users', UserController::class);
+Route::get('/search/', 'PostController@search')->name('search');
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -25,7 +25,7 @@
                 <div class="flex items-center border-b border-teal-500 py-2 text-black">
                     <input id="name" type="text" class="p-2 l-auto w-full form-control @error('name') is-invalid @enderror"
                         name="name" value="{{ old('name') }}" required autocomplete="name" autofocus
-                        placeholder="Username">
+                        placeholder="Name">
 
                     @error('name')
                         <span class="invalid-feedback" role="alert">
@@ -37,7 +37,7 @@
                 <div class="flex items-center border-b border-teal-500 py-2 text-black">
                     <input id="email" type="email"
                         class=" p-2 l-auto w-full form-control @error('email') is-invalid @enderror" name="email"
-                        value="{{ old('email') }}" required autocomplete="email" placeholder="Email">
+                        value="{{ old('email') }}" required autocomplete="email" placeholder="Username">
 
                     @error('email')
                         <span class="invalid-feedback" role="alert">

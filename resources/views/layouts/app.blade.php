@@ -23,7 +23,7 @@
     <div id="app" class="flex">
     
         <div class="bg-blue-300 w-2/12 h-screen pt-10 transform translate-y-0 translate-x-0 ">
-            <a class="btn btn-primary bg-transparent
+            <a class="btn btn-primary bg-blue-300
             hover:bg-white hover:text-black
             text-black
             font-bold
@@ -35,7 +35,7 @@
             uppercase
             w-full w-full"
                 href="{{ route('posts.index') }}"> Patients</a>
-            <a class="btn btn-primary bg-transparent
+            <a class="btn btn-primary bg-blue-300
             hover:bg-white hover:text-black
             text-black
             font-bold
@@ -47,7 +47,7 @@
             uppercase
             w-full"
                 href="{{ route('inventories.index') }}"> Inventory</a>
-            <a class="btn btn-primary bg-transparent
+            <a class="btn btn-primary bg-blue-300
             hover:bg-white hover:text-black
             text-black
             font-bold
@@ -100,7 +100,7 @@
                     @endguest --}}
                     
                     {{-- Joseph Edit --}}
-                    <li class="nav-item dropdown btn btn-primary bg-transparent hover:bg-white hover:text-black text-black  font-bold hover:border-transparent rounded block uppercase w-full">
+                    <li class="nav-item dropdown btn btn-primary bg-blue-300 hover:bg-white hover:text-black text-black  font-bold hover:border-transparent rounded block uppercase w-full">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ __('Logout') }}

@@ -13,13 +13,23 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    { 
+        // $posts = Post::where([
+        //     ['name', '!=', Null],
+        //     [function ($query) use ($request) {
+        //         if (($term = $request->term)) {
+        //             $query->orWhere('name', 'LIKE', '%' . $term . '%')->get();
+        //         }
+        //     }]
+        // ])
+
+        // ->orderBy("id", "desc")
+        // ->paginate(10);
         $data = Post::latest()->paginate(5);
     
         return view('posts.index',compact('data'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -113,5 +123,29 @@ class PostController extends Controller
     
         return redirect()->route('posts.index')
                         ->with('success','Patient deleted successfully');
+    }
+
+    //
+
+    public function search(Request $request){
+        // Get the search value from the request
+        $search = $request->input('search');
+    
+        // Search in the title and body columns from the posts table
+        // $data = Post::query()
+        //     ->where('name', 'LIKE', "%{$search}%")
+        //     ->orWhere('name', 'LIKE', "%{$search}%")
+        //     ->get();
+            $data = Post::
+            where([
+                    ['name', '!=', Null],
+                    [function ($query) use ($request) {
+                        if (($term = $request->term)) {
+                            $query->orWhere('name', 'LIKE', '%' . $term . '%')->get();
+                        }
+                    }]
+                ]);
+        // Return the search view with the resluts compacted
+        return view('search', compact('data'));
     }
 }

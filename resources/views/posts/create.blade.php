@@ -18,7 +18,6 @@
             </ul>
         </div>
     @endif
-
     
     <form action="{{ route('posts.store') }}" method="POST">
         @csrf

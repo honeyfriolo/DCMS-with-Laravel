@@ -10,7 +10,7 @@
     @endif
    
     <table class="table table-bordered">
-        <tr>
+        <tr class="odd:bg-white even:bg-slate-100">
             <th>No</th>
             <th>Medicine Name</th>
             <th>Description</th>
@@ -39,7 +39,6 @@
         <a class="btn btn-success    mt-20
               hover:text-blue-500 hover:border-blue-500
               border
-              hover:bg-white
               py-2
               px-5
               float-right
