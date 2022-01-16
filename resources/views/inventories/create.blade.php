@@ -3,7 +3,7 @@
 
 <div class="mt-4">
   <div class="italic uppercase border-b text-left">
-      <h2>Patient's Information</h2>   
+      <h2>Medicine's Information</h2>   
   </div>
 </div>
 

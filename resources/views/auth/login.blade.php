@@ -62,8 +62,8 @@
             </form>
             
                 <div class="has-text-centered flex gap-5" style="margin-top: 10px">
-                    <p> No account? </p>
-                        <a class="text-red-500 float-right font-bold hover:text-red-800"
+                    <p class="whitespace-nowrap"> No account? </p>
+                        <a class="text-red-500 float-right font-bold hover:text-red-800 whitespace-nowrap"
                             href="{{ route('register') }}">Create an account</a>
                  
                 </div>

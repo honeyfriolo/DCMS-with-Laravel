@@ -58,7 +58,7 @@
             block
             uppercase
             w-full"
-                href="">Settings</a>
+            href="{{ route('users.index') }}">Settings</a>
         
             
                 <ul class="">

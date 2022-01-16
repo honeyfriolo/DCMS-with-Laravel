@@ -3,7 +3,7 @@
 
 <div class="mt-4">
   <div class="italic uppercase border-b text-left">
-      <h2>Patient's Information</h2>   
+      <h2>Medicine's Information</h2>   
   </div>
 </div>
    
@@ -45,8 +45,10 @@
             <div class="appearance-none block w-80 bg-gray-200 text-gray-700 rounded 
              leading-tight focus:outline-none focus:bg-white">
               <select name="stockStatus" id="stockStatus" class="w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                <option value="{{ $inventory->stockStatus }}">Available</option>
-                <option value="{{ $inventory->stockStatus }}">Not Available</option>
+                {{-- <option value="{{ $inventory->stockStatus }}">Available</option> --}}
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="Available">Available</option>
+                <option value="Not Available">Not Available</option>
               </select>
             </div>
         </div>

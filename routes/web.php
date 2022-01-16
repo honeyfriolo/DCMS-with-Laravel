@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\InventoryController;   
+use App\Http\Controllers\UserController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +24,8 @@ Auth::routes();
 
 Route::resource('posts', PostController::class);
 Route::resource('inventories', InventoryController::class);
-Route::resource('auth/passwords', ResetPasswordController::class);
+Route::resource('users', UserController::class);
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
