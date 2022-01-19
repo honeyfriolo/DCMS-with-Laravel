@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\InventoryController;   
-use App\Http\Controllers\UserController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -24,9 +23,10 @@ Auth::routes();
 
 Route::resource('posts', PostController::class);
 Route::resource('inventories', InventoryController::class);
-Route::resource('users', UserController::class);
 Route::get('/search/', 'PostController@search')->name('search');
 
+Route::get('/changePassword', [App\Http\Controllers\HomeController::class, 'showChangePasswordGet'])->name('changePasswordGet');
+Route::post('/changePassword', [App\Http\Controllers\HomeController::class, 'changePasswordPost'])->name('changePasswordPost');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

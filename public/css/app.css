@@ -11830,6 +11830,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-0 {
   margin-bottom: 0px;
 }
+.ml-20 {
+  margin-left: 5rem;
+}
 .block {
   display: block;
 }
